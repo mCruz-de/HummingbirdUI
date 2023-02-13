@@ -1,5 +1,5 @@
 @charset "UTF-8";/*!
- * HummingbirdUI v4.0.0 (https://hummingbird-ui.net/)
+ * HummingbirdUI v4.0.1 (https://hummingbird-ui.net/)
  * Copyright 2023 HummingbirdUI
  * Licensed under MIT (https://github.com/mCruz-de/HummingbirdUI/blob/main/LICENSE)
  */
@@ -143,6 +143,7 @@ body {
   font-family: var(--body-font-family); 
   color: var(--body-color);
   background-color: var(--body-background-color);  
+  transition: all .3s, color .1ms;
 }
 
 body.dark-mode{
@@ -184,7 +185,7 @@ body.dark-mode #overlay{
   border-bottom: var(--sidenav-border-top);
   border-left: var(--sidenav-border-top);
   box-shadow: var(--sidenav-shadow);
-  transition: width .3s, padding .3s, border .3s, box-shadow .3s, left .3s;
+  transition: all .3s, color .1ms;
   z-index: 1000;
 }
 
@@ -225,7 +226,7 @@ body.dark-mode #sidenav{
   margin: 0;
   padding: 0;
   padding-left: var(--sidenav-width);
-  transition: padding .3s;
+  transition: all .3s, color .1ms;
   z-index: 900;
 }
 
@@ -245,6 +246,7 @@ body.dark-mode #sidenav{
   border-left: var(--topbar-border-left);
   padding: var(--topbar-padding);
   box-shadow: var(--topbar-shadow);
+  transition: all .3s, color .1ms;
 }
 
 #topbar-left-elements{
@@ -290,7 +292,7 @@ body.dark-mode #topbar{
   padding: 0;
   padding-top: var(--topbar-height);
   padding-left: var(--sidenav-width);
-  transition: padding .3s;
+  transition: all .3s, color .1ms;
 }
 
 main{
@@ -298,7 +300,7 @@ main{
   display: block;
   margin: 0;
   padding: var(--main-padding);
-  transition: padding .3s;
+  transition: all .3s, color .1ms;
 }
 
 

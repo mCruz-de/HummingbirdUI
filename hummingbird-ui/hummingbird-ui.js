@@ -1,5 +1,5 @@
 /*!
-  * HummingbirdUI v4.0.0 (https://hummingbird-ui.net/)
+  * HummingbirdUI v4.0.1 (https://hummingbird-ui.net/)
   * Copyright 2023 HummingbirdUI
   * Licensed under MIT (https://github.com/mCruz-de/HummingbirdUI/blob/main/LICENSE)
   */
