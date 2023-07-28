@@ -95,7 +95,7 @@
   /* geometry */
 
   --sidenav-width: 265px;
-  --sidenav-padding: 16px 8px 16px 8px;
+  --sidenav-padding: 16px 8px 40px 8px;
 
   --sidenav-width-mobile: var(--sidenav-width);
   --sidenav-padding-mobile: var(--sidenav-padding);
@@ -176,6 +176,7 @@ body.dark-mode #overlay{
   left: 0;
   width: var(--sidenav-width);
   height: 100vh;
+  overflow-y: auto;
   box-sizing: border-box;
   padding: var(--sidenav-padding);
   margin: 0;
@@ -288,6 +289,7 @@ body.dark-mode #topbar{
 #content-wrapper{
   position: relative;
   display: block;
+  height: 100vh;
   margin: 0;
   padding: 0;
   padding-top: var(--topbar-height);
@@ -299,6 +301,8 @@ main{
   position: relative;
   display: block;
   margin: 0;
+  height: 100%;
+  overflow-y: auto;
   padding: var(--main-padding);
   transition: all .3s, color .1ms;
 }
