@@ -37,7 +37,7 @@
   --sidenav-border-left-mobile: var(--sidenav-border-left);
   --sidenav-shadow-mobile: var(--sidenav-shadow);
 
-  --topbar-background-color: transparent;
+  --topbar-background-color: #ffffff;
   --topbar-border-top: none;
   --topbar-border-right: none;
   --topbar-border-bottom: 1px solid #DFD8DB;
@@ -77,7 +77,7 @@
   --sidenav-border-left-mobile-dark: var(--sidenav-border-left-dark);
   --sidenav-shadow-mobile-dark: var(--sidenav-shadow-dark);
 
-  --topbar-background-color-dark: transparent;
+  --topbar-background-color-dark: #292929;
   --topbar-border-top-dark: none;
   --topbar-border-right-dark: none;
   --topbar-border-bottom-dark: 1px solid #181818;
@@ -132,7 +132,6 @@
 
 html{
   width: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -167,7 +166,7 @@ body.dark-mode #overlay{
 }
 
 #sidenav{
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -216,7 +215,7 @@ body.dark-mode #sidenav{
 }
 
 #topbar-wrapper{
-  position: absolute;
+  position: fixed;
   display: block;
   top: 0px;
   left: 0px;
@@ -289,7 +288,6 @@ body.dark-mode #topbar{
 #content-wrapper{
   position: relative;
   display: block;
-  height: 100vh;
   margin: 0;
   padding: 0;
   padding-top: var(--topbar-height);
@@ -301,8 +299,7 @@ main{
   position: relative;
   display: block;
   margin: 0;
-  height: 100%;
-  overflow-y: auto;
+  min-height: 100%;
   padding: var(--main-padding);
   transition: all .3s, color .1ms;
 }
